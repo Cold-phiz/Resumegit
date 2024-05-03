@@ -1,0 +1,117 @@
+/* Main background styles*/
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative; /* Make body a positioning context */
+}
+
+.fireworkcanvas {
+    position: fixed; /* Position the background fixed */
+    background-color: #000;
+    margin: auto;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Styles for the top menu bar */
+.top-menu {
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo h1 {
+    margin-left: 30px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    padding-top: 80px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Century Gothic, sans-serif;
+    color: white;
+    position: relative; /* Position relative to the body */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+    max-height: calc(100vh - 100px); /* Set maximum height to fill remaining space */
+}
+
+.content::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.content p {
+    line-height: 25px;
+}
+
+/* Copyright notice */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.avalibilitytable {
+    text-align: center;
+}
+
+.avalibilitytable {
+    text-align: center;
+}
+
+table, th, td {
+  border:  5px solid rgba(0, 0, 0, 0.0001);
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+th, td {
+  background-color: rgba(255, 255, 255, 0.01);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 10px;
+}
